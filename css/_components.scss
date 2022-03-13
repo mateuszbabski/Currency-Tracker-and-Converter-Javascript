@@ -1,0 +1,57 @@
+.select-btn {
+  border-radius: 5px;
+  border-style: none;
+  height: 30px;
+  width: 80px;
+  padding: 5px;
+  background-color: rgb(255, 225, 255);
+  color: rgb(112, 1, 156);
+  font-family: Poppins;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.input-place {
+  border-radius: 5px;
+  border-style: none;
+  padding: 5px;
+  margin: 5px;
+  background-color: rgb(255, 225, 255);
+  color: rgb(112, 1, 156);
+  width: 180px;
+  height: 30px;
+  font-family: Poppins;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+.input-place:focus {
+  outline: 2px solid rgb(112, 1, 156);
+}
+
+.manipulate-btn {
+  border-radius: 5px;
+  border-style: none;
+  background-color: rgb(255, 225, 255);
+  color: rgb(112, 1, 156);
+  height: 25px;
+  width: 75px;
+}
+
+@media (min-width: 420px) {
+  .input-place {
+    width: 220px;
+  }
+  .manipulate-btn {
+    width: 100px;
+    height: 30px;
+  }
+}
+
+@media (min-width: 750px) {
+  .input-place {
+    width: 300px;
+  }
+  .manipulate-btn {
+    width: 100px;
+    height: 30px;
+  }
+}

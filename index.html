@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/d898e9d739.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer type="module" src="js/control.js"></script>
+    <title>Currency Tracker</title>
+  </head>
+  <body>
+    <div class="app-container">
+      <div class="header">
+        <div class="logo"><p>CurrencyTracker</p></div>
+      </div>
+      <div class="application">
+        <div class="currency-exchange-window">
+          <div class="date-now"></div>
+
+          <div class="currencies-values">
+            <div class="currencies-values-container">
+              <input
+                type="number"
+                placeholder="enter value"
+                class="input-place enter-value-input"
+              />
+              <select name="currency1" class="curr1 select-btn">
+                <!-- <option value="currency1-option" class="option">option1</option> -->
+              </select>
+            </div>
+            <div class="currencies-values-container">
+              <input
+                type="text"
+                placeholder="value"
+                class="input-place exchange-result-input"
+                disabled
+              />
+              <select name="currency2" class="curr2 select-btn">
+                <!-- <option value="currency2-option" class="option">option2</option> -->
+              </select>
+            </div>
+            <div class="ratio-container">
+              <!-- <p class="exchange-ratio">ratio: 1.1</p> -->
+            </div>
+            <div class="control-buttons">
+              <button type="submit" class="manipulate-btn counter">
+                <i class="fa-solid fa-arrows-rotate"></i> Convert
+              </button>
+              <button type="submit" class="manipulate-btn change-curr">
+                <i class="fa-solid fa-arrow-right-arrow-left"></i> Reverse
+              </button>
+              <button class="show-chart manipulate-btn" type="button">
+                <i class="fa-solid fa-chart-line"></i> Chart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="exchange-rates-window">
+          <strong>PLN exchange rates</strong>
+
+          <div class="currencies-table">
+            <!-- <p class="update-time">Update: 01.01.1990</p> -->
+            <table class="currency-list">
+              <tr class="main-values">
+                <td class="currency-column">Currency</td>
+                <td>Bid</td>
+                <td>Ask</td>
+                <td>Average</td>
+                <td>Last 7</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="chart-modal-window hidden"></div>
+      </div>
+    </div>
+  </body>
+</html>

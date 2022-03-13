@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Poppins:ital,wght@0,500;1,300&display=swap');
+.select-btn {
+  border-radius: 5px;
+  border-style: none;
+  height: 30px;
+  width: 80px;
+  padding: 5px;
+  background-color: #ffe1ff;
+  color: #70019c;
+  font-family: Poppins;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.input-place {
+  border-radius: 5px;
+  border-style: none;
+  padding: 5px;
+  margin: 5px;
+  background-color: #ffe1ff;
+  color: #70019c;
+  width: 180px;
+  height: 30px;
+  font-family: Poppins;
+  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.input-place:focus {
+  outline: 2px solid #70019c;
+}
+
+.manipulate-btn {
+  border-radius: 5px;
+  border-style: none;
+  background-color: #ffe1ff;
+  color: #70019c;
+  height: 25px;
+  width: 75px;
+}
+
+@media (min-width: 420px) {
+  .input-place {
+    width: 220px;
+  }
+  .manipulate-btn {
+    width: 100px;
+    height: 30px;
+  }
+}
+
+@media (min-width: 750px) {
+  .input-place {
+    width: 300px;
+  }
+  .manipulate-btn {
+    width: 100px;
+    height: 30px;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  color: #474747;
+}
+
+.app-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 800px;
+  height: 100vh;
+  background: linear-gradient(135deg, #da81fd, #67028f, #4a0068);
+}
+
+p {
+  font-style: italic;
+  font-size: 14px;
+  color: #585858;
+}
+
+.logo p {
+  font-size: 2.25rem;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.currency-exchange-window {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 2rem auto 3rem auto;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1rem;
+  width: 90%;
+  background-color: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
+}
+
+.currency-exchange-window .date-now {
+  width: inherit;
+  -webkit-box-pack: left;
+  -ms-flex-pack: left;
+  justify-content: left;
+}
+
+.currency-exchange-window .currencies-values .currencies-values-container {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.currency-exchange-window .currencies-values .exchange-ratio {
+  width: inherit;
+  text-align: right;
+}
+
+.currency-exchange-window .control-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin: 1rem auto 0 auto;
+}
+
+.exchange-rates-window {
+  background-color: white;
+  width: 90%;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 0 auto;
+  -webkit-box-shadow: 3px 3px 3px black;
+  box-shadow: 3px 3px 3px black;
+}
+
+.exchange-rates-window .update-time {
+  margin: 1rem auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  border-bottom: 2px solid purple;
+}
+
+tr {
+  -webkit-box-pack: right;
+  -ms-flex-pack: right;
+  justify-content: right;
+  text-align: right;
+}
+
+tr .currency-column {
+  text-align: left;
+  width: 100px;
+}
+
+.hidden {
+  display: none;
+}
+
+span {
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  color: #474747;
+  font-style: italic;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Poppins:ital,wght@0,500;1,300&display=swap');
+@import 'components';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  color: rgb(71, 71, 71);
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 800px;
+  height: 100vh;
+
+  background: linear-gradient(
+    135deg,
+    rgb(218, 129, 253),
+    rgb(103, 2, 143),
+    rgb(74, 0, 104)
+  );
+}
+p {
+  font-style: italic;
+  font-size: 14px;
+  color: rgb(88, 88, 88);
+}
+
+.logo {
+  p {
+    font-size: 2.25rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 2rem;
+  }
+}
+
+.currency-exchange-window {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem auto 3rem auto;
+  align-items: center;
+  padding: 1rem;
+  width: 90%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
+
+  .date-now {
+    width: inherit;
+    justify-content: left;
+  }
+  .currencies-values {
+    .currencies-values-container {
+      justify-content: space-between;
+    }
+    .exchange-ratio {
+      width: inherit;
+      text-align: right;
+    }
+  }
+  .control-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem auto 0 auto;
+  }
+}
+
+.exchange-rates-window {
+  background-color: white;
+  width: 90%;
+  padding: 1rem;
+
+  border-radius: 10px;
+  margin: 0 auto;
+  box-shadow: 3px 3px 3px black;
+  .update-time {
+    margin: 1rem auto;
+  }
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+td {
+  border-bottom: 2px solid purple;
+}
+tr {
+  justify-content: right;
+  text-align: right;
+
+  .currency-column {
+    text-align: left;
+    width: 100px;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+span {
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  color: rgb(71, 71, 71);
+  font-style: italic;
+}
